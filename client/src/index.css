@@ -1,13 +1,131 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+  height: 100vh;
+  overflow: hidden;
+  /* min-height: 100vh; */
+  background-image: url('./images/bg_grad.png');
+  background-repeat: no-repeat;
+  /* background-position-y: center; */
+  background-position-x: right;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem;
+  /* background-color: rgb(245, 244, 244); */
+  color: rgb(7, 110, 97);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main {
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.main_title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #323232;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.main_desc {
+  font-size: 1.2rem;
+  color: #323232;
+  padding: 0 5rem;
+  z-index: 10;
+}
+
+.main_cont {
+  max-width: 850px;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0;
+  z-index: 10;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border: 1px solid gray;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: rgb(7, 110, 97);
+}
+
+.button_01 {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid gray;
+  border-radius: 12px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background: rgb(2, 85, 43);
+  background: linear-gradient(
+    346deg,
+    rgba(2, 85, 43, 1) 0%,
+    rgba(1, 165, 80, 1) 52%,
+    rgba(0, 255, 124, 1) 100%
+  );
+  z-index: 10;
+}
+
+.button:hover {
+  border: 1px solid rgb(7, 110, 97);
+  background-color: rgb(7, 110, 97);
+  color: white;
+  transition: all ease-in 0.2s;
+}
+
+.button_01:hover {
+  border: 1px solid rgb(216, 145, 39);
+  background: rgb(230, 220, 90);
+  background: linear-gradient(
+    346deg,
+    rgb(216, 145, 39) 0%,
+    rgb(92, 77, 27) 39%,
+    rgb(213, 228, 11) 72%,
+    rgb(163, 113, 65) 100%
+  );
+  color: white;
+  transition: all ease-in 0.2s;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 10;
+}
+
+.crm_chat {
+  position: relative;
+  top: -150px;
+  left: -200px;
+  opacity: 0.5;
+  z-index: -10;
 }
